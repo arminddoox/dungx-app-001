@@ -19,6 +19,9 @@ export default defineConfig({
     port: 3000,
     open: true, // Tự động mở browser
     host: true, // Cho phép access từ network
+    allowedHosts: [
+      'b36f91be30d3.ngrok-free.app' // thêm host này để Vite cho phép
+    ]
   },
   build: {
     outDir: 'dist',

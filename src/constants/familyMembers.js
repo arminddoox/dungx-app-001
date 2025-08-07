@@ -38,7 +38,7 @@ export const FAMILY_MEMBERS = [
 ];
 
 export const USER_PROFILE = {
-  name: 'ARMIN',
+  name: 'Quỳnh Dương',
   username: 'quyndunn_28',
   location: 'Hà Nội, Việt Nam',
   stats: {

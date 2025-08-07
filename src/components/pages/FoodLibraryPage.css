@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.group:before, .group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+embed, img, object, video {
+  max-width: 100%;
+}
+
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+
+.no-space-between-inline-blocks {
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+}
+
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 1414px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+/* Namespace all styles with .food-library-page to avoid conflicts */
+.food-library-page .global_container_ {
+  height: auto;
+  margin: 0 auto;
+  padding: 67px 0 0;
+  position: relative;
+  width: 100%;
+  background: #fff center top;
+  background-size: cover;
+}
+
+.food-library-page .header {
+  margin: 0 auto;
+  padding: 0 52px 0 55px;
+  width: 1414px;
+  transition: all 0.3s ease;
+  padding-top: 50px;
+}
+
+.food-library-page .global_container_.sticky .header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fff; /* Ensure header doesn't become transparent */
+}
+
+.food-library-page .main-content-wrapper {
+  margin: 180px auto 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.food-library-page .global_container_.sticky .main-content-wrapper {
+  position: sticky;
+  top: 100px; /* Below header (approx. height of header: 68px + padding/margins) */
+  width: 1414px;
+  padding-top: 30px;
+  z-index: 15;
+  background: #fff; /* Ensure content doesn't become transparent */
+}
+
+.food-library-page .layer-5-copy-2 {
+  float: left;
+  margin: 10px 0 0;
+}
+
+.food-library-page .triangle-1 {
+  float: right;
+  margin: 9px 0 0;
+}
+
+.food-library-page .text {
+  float: right;
+  margin: 0 24px 0 0;
+  font-size: 2rem;
+}
+
+.food-library-page .l-unconstrained {
+  position: relative;
+}
+
+.food-library-page .l-constrained {
+  margin: 0 auto;
+  padding: 0 33px;
+  width: 1414px;
+  position: relative;
+}
+
+.food-library-page .page-1-profile-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: flex-direction 0.3s ease;
+}
+
+.food-library-page .l-constrained.scrolled .page-1-profile-group {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px; /* Space between layer-29 and group-3 */
+  margin-top: 30px;
+}
+
+.food-library-page .layer-29 {
+  display: block;
+  margin: 0 auto;
+  width: 528px;
+  height: 528px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.food-library-page .l-constrained.scrolled .layer-29 {
+  width: 200px; /* 50% of original size */
+  height: 200px;
+  margin: 0;
+}
+
+.food-library-page .text-2 {
+  display: block;
+  margin: 54px auto 0;
+  width: 519px;
+  height: 81px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.food-library-page .l-constrained.scrolled .text-2 {
+  margin: 0; /* Remove margin in horizontal layout */
+}
+
+.food-library-page .group-3 .row-5,
+.food-library-page .group-2,
+.food-library-page .group-4,
+.food-library-page .row-2 .note {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 500px; /* Adjust based on content height */
+  overflow: hidden;
+}
+
+.food-library-page .l-constrained.scrolled .group-3 .row-5,
+.food-library-page .l-constrained.scrolled .group-2,
+.food-library-page .l-constrained.scrolled .group-4,
+.food-library-page .l-constrained.scrolled .row-2 .note {
+  max-height: 0;
+  opacity: 0;
+  display: none; /* Ensure no space is occupied */
+}
+
+.food-library-page .row-5 {
+  display: table;
+  margin: 12px auto 0;
+}
+
+.food-library-page .layer-6 {
+  float: left;
+  margin: 0 14px 0 0;
+}
+
+.food-library-page .text-3 {
+  float: left;
+  margin: 6px 0 0;
+  font-size: 1.2rem;
+}
+
+.food-library-page .group-2 {
+  margin: 59px auto 0;
+  width: 751px;
+}
+
+.food-library-page .col-4,
+.food-library-page .col-5,
+.food-library-page .col-3 {
+  float: left;
+  position: relative;
+}
+
+.food-library-page .col-4 {
+  width: 100px;
+}
+
+.food-library-page .col-5 {
+  margin: 2px 0 0 211px;
+  width: 92px;
+}
+
+.food-library-page .col-3 {
+  margin: 11px 0 0 151px;
+  width: 197px;
+}
+
+.food-library-page .text-4,
+.food-library-page .text-6,
+.food-library-page .text-8 {
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.food-library-page .text-5,
+.food-library-page .text-7,
+.food-library-page .text-9 {
+  display: block;
+  margin: 13px auto 0;
+  font-size: 1rem;
+}
+
+.food-library-page .group-4 {
+  margin: 72px auto 0;
+  width: 1012px;
+}
+
+.food-library-page .rectangle-2-holder {
+  float: left;
+  margin: 2px 0 0;
+  padding: 49px 0 53px;
+  width: 479px;
+  border-radius: 50px;
+  background: #214ecf;
+  cursor: pointer;
+}
+
+.food-library-page .text-10 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 7px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.food-library-page .rectangle-2-copy-holder {
+  float: right;
+  padding: 42px 0 51px;
+  width: 484px;
+  border: 5px solid #214ecf;
+  border-radius: 52.5px;
+  cursor: pointer;
+}
+
+.food-library-page .text-11 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 7px;
+  font-size: 1.5rem;
+}
+
+.food-library-page .row-2 {
+  margin: 0;
+  width: 1332px;
+  display: flex; /* Ensure proper layout for elements */
+}
+
+.food-library-page .layer-32 {
+  float: left;
+  margin: 69px 0 0;
+}
+
+.food-library-page .text-12 {
+  float: left;
+  margin-top: 64px;
+}
+.thuvien {
+  margin-top: 1000px;
+  transform: scale(0.8);
+}
+.thanhtich {
+  margin-top: 64px;
+  transform: scale(0.55);
+  margin-left: -100px;
+}
+.taichinh {
+  margin-top: 64px;
+  transform: scale(0.55);
+}
+.hoso {
+  margin-top: 64px;
+  transform: scale(0.6);
+}
+
+.food-library-page .note {
+  float: left;
+  margin: 0 0 0 54px;
+}
+
+.food-library-page .group-6 {
+  float: right;
+  position: absolute;
+  right: 50px;
+  margin: 65px 0 0;
+  width: 63px;
+}
+
+.food-library-page .row-3,
+.food-library-page .row-4 {
+  position: relative;
+}
+
+.food-library-page .rectangle-5,
+.food-library-page .rectangle-5-copy,
+.food-library-page .rectangle-5-copy-2,
+.food-library-page .rectangle-5-copy-3 {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #000;
+}
+
+.food-library-page .rectangle-5,
+.food-library-page .rectangle-5-copy-3 {
+  border-radius: 8.5px;
+}
+
+.food-library-page .rectangle-5-copy,
+.food-library-page .rectangle-5-copy-2 {
+  border-radius: 14.5px;
+}
+
+.food-library-page .rectangle-5-copy {
+  margin-left: 3px;
+}
+
+.food-library-page .row-4 {
+  margin-top: 3px;
+}
+
+.food-library-page .rectangle-5-copy-2 {
+  margin-right: 3px;
+}
+
+.food-library-page .layer-19 {
+  height: 2px;
+  margin: 13px auto 0;
+  width: 100%;
+  background: url(./assets/FoodLibraryPage/layer_19.png) no-repeat center top;
+  background-size: cover;
+}
+
+.food-library-page .footer {
+  margin: 21px auto 0;
+  width: 1414px;
+}
+
+.food-library-page .group-2-2 {
+  display: block;
+  margin: 0 auto;
+}

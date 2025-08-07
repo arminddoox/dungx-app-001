@@ -1,4 +1,4 @@
-# Profile App - ARMIN
+# Profile App - Quỳnh Dương
 
 A modern React application built with Vite, featuring a user profile with multiple sections including food library, achievements, financial management, and personal profile.
 

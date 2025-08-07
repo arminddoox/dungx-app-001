@@ -1,6 +1,6 @@
 import React from 'react';
 import { User, BookOpen, Trophy, DollarSign } from 'lucide-react';
-import { NAVIGATION_ITEMS, USER_PROFILE } from '../../constants';
+import { NAVIGATION_ITEMS } from '../../constants';
 
 const iconMap = {
   BookOpen,
@@ -13,14 +13,6 @@ export const Header = ({ currentRoute, navigate }) => {
   return (
     <header className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 shadow-lg">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-            <User className="text-white" size={24} />
-          </div>
-          <div className="text-white">
-            <h1 className="text-2xl font-bold">{USER_PROFILE.username}</h1>
-          </div>
-        </div>
         <nav className="flex space-x-2">
           {NAVIGATION_ITEMS.map((item) => {
             const IconComponent = iconMap[item.icon];

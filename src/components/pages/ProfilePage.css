@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before, .group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; /* ie 6/7 */
+}
+
+embed, img, object, video {
+  max-width: 100%;
+}
+
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+
+.no-space-between-inline-blocks {
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+}
+
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 1368px;
+  color: #000000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+/* Namespace all styles with .profile-page to avoid conflicts */
+.profile-page .global_container_ {
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  padding: 67px 0;
+  position: relative;
+  width: 100%;
+  background: #ffffff center 0;
+  background-position: center top;
+  background-size: cover;
+}
+
+.profile-page .l-constrained {
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  width: 1368px;
+}
+
+.profile-page .header {
+  left: 3.5px;
+  margin: 0 auto;
+  position: relative;
+  width: 1307px;
+}
+
+.profile-page .layer-5-copy-2 {
+  float: left;
+  margin: 10px 0 0;
+}
+
+.profile-page .triangle-1 {
+  float: right;
+  margin: 9px 0 0;
+}
+
+.profile-page .text {
+  float: right;
+  margin: 0 24px 0 0;
+}
+
+.profile-page .row-11 {
+  margin: 71px 0 0;
+  position: relative;
+}
+
+.profile-page .layer-29 {
+  float: left;
+  margin: 0 51px 0 0;
+}
+
+.profile-page .text-2 {
+  float: left;
+  margin: 61px 0 0;
+}
+
+.profile-page .group-7 {
+  margin: 64px auto 0;
+  position: relative;
+}
+
+.profile-page .row-2 {
+  margin: 0 auto;
+  padding: 0 23px 0 24px;
+  position: relative;
+  width: 1368px;
+}
+
+.profile-page .layer-32 {
+  float: left;
+}
+
+.profile-page .text-3 {
+  float: left;
+  margin: 4px 0 0 17px;
+}
+
+.profile-page .group-6 {
+  float: right;
+  margin: 11px 0 0;
+  position: relative;
+  width: 63px;
+}
+
+.profile-page .row-3 {
+  position: relative;
+}
+
+.profile-page .rectangle-5 {
+  float: left;
+  height: 30px;
+  margin: 0 3px 0 0;
+  width: 30px;
+  border: 3px solid #000000;
+  border-radius: 8.5px;
+}
+
+.profile-page .rectangle-5-copy {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #000000;
+  border-radius: 14.5px;
+}
+
+.profile-page .row-4 {
+  margin: 3px 0 0;
+  position: relative;
+}
+
+.profile-page .rectangle-5-copy-2 {
+  float: left;
+  height: 30px;
+  margin: 0 3px 0 0;
+  width: 30px;
+  border: 3px solid #000000;
+  border-radius: 14.5px;
+}
+
+.profile-page .rectangle-5-copy-3 {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #000000;
+  border-radius: 8.5px;
+}
+
+.profile-page .layer-19 {
+  height: 2px;
+  margin: 24px auto 0;
+  position: relative;
+  width: 100%;
+  background: url(./assets/ProfilePage/layer_19.png) no-repeat center 0;
+  background-position: center top;
+  background-size: cover;
+}
+
+.profile-page .group-9 {
+  margin: 39px auto 0;
+  position: relative;
+  width: 1368px;
+}
+
+.profile-page .group-8 {
+  height: 193px;
+  margin: 0 auto;
+  position: relative;
+  width: 1081px;
+}
+
+.profile-page .layer-38 {
+  left: 50%;
+  position: absolute;
+  top: 8px;
+  margin-left: -540.5px;
+}
+
+.profile-page .layer-39 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -401.5px;
+}
+
+.profile-page .layer-37 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -248.5px;
+}
+
+.profile-page .layer-36 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -100.5px;
+}
+
+.profile-page .layer-40 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: 50.5px;
+}
+
+.profile-page .layer-41 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: 198.5px;
+}
+
+.profile-page .rectangle-6-copy-4 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 192px;
+  border: 8px solid #ffffff;
+  border-radius: 43px;
+  margin-left: 348.5px;
+}
+
+.profile-page .group-8-copy {
+  display: table;
+  margin: 83px auto 0;
+  position: relative;
+}
+
+.profile-page .col {
+  height: 1479px;
+  margin: 0 auto;
+  padding: 62px 48px;
+  position: relative;
+  width: 1364px;
+  border-radius: 100px;
+  background: url(./assets/ProfilePage/rectangle_6_copy.png) no-repeat;
+}
+
+.profile-page .row-5 {
+  margin: 0 0 0 23px;
+  position: relative;
+}
+
+.profile-page .layer-38-2 {
+  float: left;
+  margin: 0 42px 0 0;
+}
+
+.profile-page .text-4 {
+  float: left;
+  margin: 9px 0 0;
+}
+
+.profile-page .row-6 {
+  margin: 32px 0 0 23px;
+  position: relative;
+}
+
+.profile-page .layer-39-2 {
+  float: left;
+  margin: 0 46px 0 0;
+}
+
+.profile-page .text-5 {
+  float: left;
+  margin: 14px 0 0;
+}
+
+.profile-page .row-7 {
+  margin: 37px 0 0 23px;
+  position: relative;
+}
+
+.profile-page .layer-37-2 {
+  float: left;
+  margin: 0 47px 0 0;
+}
+
+.profile-page .text-6 {
+  float: left;
+  margin: 6px 0 0;
+}
+
+.profile-page .row-8 {
+  margin: 40px 0 0 23px;
+  position: relative;
+}
+
+.profile-page .layer-36-2 {
+  float: left;
+  margin: 0 47px 0 0;
+}
+
+.profile-page .text-7 {
+  float: left;
+  margin: 6px 0 0;
+}
+
+.profile-page .row-9 {
+  margin: 44px 0 0 23px;
+  position: relative;
+}
+
+.profile-page .layer-40-2 {
+  float: left;
+  margin: 0 46px 0 0;
+}
+
+.profile-page .text-8 {
+  float: left;
+  margin: 6px 0 0;
+}
+
+.profile-page .row-10 {
+  margin: 41px 0 0 23px;
+  position: relative;
+}
+
+.profile-page .layer-41-2 {
+  float: left;
+  margin: 0 46px 0 0;
+}
+
+.profile-page .text-9 {
+  float: left;
+  margin: 6px 0 0;
+}
+
+.profile-page .text-10 {
+  display: block;
+  margin: 42px auto 0;
+}
+
+.profile-page .rectangle-6 {
+  display: block;
+  margin: 27px auto 0;
+  width: 1364px;
+  border-radius: 51px;
+}

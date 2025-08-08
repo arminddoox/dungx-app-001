@@ -1,0 +1,13 @@
+.bg-gradient-to-r {
+    justify-self: center;
+    transform: scale(4);
+    
+    position: fixed;
+    bottom: -220px;
+}
+
+.bg-gradient-to-r button {
+    padding: 0 33px;
+    padding-bottom: 100px;
+}
+

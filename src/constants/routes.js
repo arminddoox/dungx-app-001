@@ -5,6 +5,7 @@ export const ROUTES = {
   PROFILE: 'profile'
 };
 
+
 export const NAVIGATION_ITEMS = [
   {
     route: ROUTES.FOOD_LIBRARY,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { User, BookOpen, Trophy, DollarSign } from 'lucide-react';
 import { NAVIGATION_ITEMS } from '../../constants';
+import './Header.css';
 
 const iconMap = {
   BookOpen,
@@ -29,7 +30,6 @@ export const Header = ({ currentRoute, navigate }) => {
                 }`}
               >
                 <IconComponent size={20} className="inline mr-2" />
-                {item.label}
               </button>
             );
           })}

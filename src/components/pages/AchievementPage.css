@@ -375,7 +375,7 @@ body {
   height: 2px;
   margin: 24px auto 0;
   width: 100%;
-  background: url(./assets/AchievementPage/layer_19.png) no-repeat center top;
+  background: url(/assets/AchievementPage/layer_19.png) no-repeat center top;
   background-size: cover;
 }
 

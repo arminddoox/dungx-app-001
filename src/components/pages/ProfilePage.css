@@ -257,7 +257,7 @@ body {
   margin: 24px auto 0;
   position: relative;
   width: 100%;
-  background: url(./assets/ProfilePage/layer_19.png) no-repeat center 0;
+  background: url(/assets/ProfilePage/layer_19.png) no-repeat center 0;
   background-position: center top;
   background-size: cover;
 }
@@ -340,7 +340,7 @@ body {
   position: relative;
   width: 1364px;
   border-radius: 100px;
-  background: url(./assets/ProfilePage/rectangle_6_copy.png) no-repeat;
+  background: url(/assets/ProfilePage/rectangle_6_copy.png) no-repeat;
 }
 
 .profile-page .row-5 {
